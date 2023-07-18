@@ -1,0 +1,4 @@
+name: caneca-api
+main: me.caneca.api.Main
+version: '1.0'
+author: caneca
