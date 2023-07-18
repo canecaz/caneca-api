@@ -29,6 +29,17 @@
         </plugins>
     </build>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexux/content/repositories/snapshots/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <repositories>
         <repository>
             <id>spigotmc-repo</id>
