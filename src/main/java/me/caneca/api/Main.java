@@ -16,10 +16,6 @@ public class Main extends JavaPlugin {
     private int permissionId = 0;
     private boolean tagsAPI = false;
 
-    public boolean isPex() {
-        return permissionId == 1;
-    }
-
     public boolean isLuck() {
         return permissionId == 2;
     }

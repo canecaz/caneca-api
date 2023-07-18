@@ -18,7 +18,6 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexux/content/repositories/snapshots/</url>
         </repository>
-
         <repository>
             <id>placeholderapi</id>
             <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
@@ -31,14 +30,6 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.permissionsex</groupId>
-            <artifactId>PermissionsEx</artifactId>
-            <version>1.23.4</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/Gabriel Costa/Desktop/Pastas/Dependencies/PermissionsEx-1.23.4.jar</systemPath>
         </dependency>
 
         <dependency>

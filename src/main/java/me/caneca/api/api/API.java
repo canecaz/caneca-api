@@ -26,7 +26,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
@@ -189,8 +188,6 @@ public class API {
     }
 
     public static String getName(OfflinePlayer player){
-        if (Main.getInstance().isPex())
-            return colored(PermissionsEx.getUser(player.getName()).getPrefix()) + player.getName();
         return player.getName();
     }
 
@@ -203,9 +200,7 @@ public class API {
     }
 
     public static String getPrefix(String player){
-        if (Main.getInstance().isPex())
-            return colored(PermissionsEx.getUser(player).getPrefix());
-        else if (Main.getInstance().isLuck()) {
+        if (Main.getInstance().isLuck()) {
             if (!Main.getInstance().isTagsAPI()) {
                 if (Bukkit.getPlayer(player) == null) return player;
                 User user = Main.getInstance().getLuckAPI().getUserManager().getUser(player);
