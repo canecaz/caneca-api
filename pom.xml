@@ -32,7 +32,7 @@
     <repositories>
         <repository>
             <id>spigotmc-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <url>https://hub.spigotmc.org/nexux/content/repositories/snapshots/</url>
         </repository>
         <repository>
             <id>placeholderapi</id>
@@ -43,19 +43,18 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>me.caneca.musictags</groupId>-->
-<!--            <artifactId>MusicTags</artifactId>-->
-<!--            <version>1.23.4</version>-->
-<!--            <scope>system</scope>-->
-<!--            <systemPath>${local.maven.path}/MusicTags/target/MusicTags-1.0.jar</systemPath>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>me.caneca.musictags</groupId>
+            <artifactId>MusicTags</artifactId>
+            <version>1.23.4</version>
+            <scope>system</scope>
+            <systemPath>${local.maven.path}/MusicTags/target/MusicTags-1.0.jar</systemPath>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/me.lucko.luckperms/luckperms-api -->
         <dependency>
