@@ -3,7 +3,6 @@ package me.caneca.api.api;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
 import me.caneca.api.Main;
-import me.caneca.music.tags.utils.api.TagsAPI;
 import net.luckperms.api.model.group.Group;
 import net.luckperms.api.model.user.User;
 import net.minecraft.server.v1_8_R3.*;
@@ -182,9 +181,7 @@ public class API {
     }
 
     public static String getName(String player){
-        return Main.getInstance().isLuck() && Main.getInstance().isTagsAPI() ?
-                TagsAPI.getPlayerName(player) :
-                getPrefix(player) + player;
+        return getPrefix(player) + player;
     }
 
     public static String getName(OfflinePlayer player){
@@ -211,7 +208,7 @@ public class API {
                 if (group == null) return player;
                 return colored(Objects.requireNonNull(group.getCachedData().getMetaData().getPrefix()));
             }
-            return TagsAPI.getPlayerPrefix(player);
+            return "";
         }
         return "";
     }
