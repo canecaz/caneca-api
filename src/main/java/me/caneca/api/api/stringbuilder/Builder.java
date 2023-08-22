@@ -8,7 +8,7 @@ public class Builder {
 
     public Builder add(String string) {
         this.string.append(this.string.length() == 0 ? "" : "\n")
-                .append(ChatColor.translateAlternateColorCodes('&', string.length() == 0 ? "&f " : string));
+                .append(ChatColor.translateAlternateColorCodes('&', string.isEmpty() ? "&f " : string));
         return this;
     }
 

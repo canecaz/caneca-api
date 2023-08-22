@@ -356,7 +356,8 @@ public class API {
         int zeros = 3;
         for (String suffix : suffix) {
             if (suffix.isEmpty()) continue;
-            if (string.endsWith(suffix) && isInt(String.valueOf(string.charAt(string.length()-suffix.length()-1))))
+            if (isInt(String.valueOf(string.charAt(0))) && string.endsWith(suffix)
+                    && isInt(String.valueOf(string.charAt(string.length()-suffix.length()-1))))
                 return new BigDecimal(string.substring(0, string.length() - suffix.length())).movePointRight(zeros);
             zeros+= 3;
         }

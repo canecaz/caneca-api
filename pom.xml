@@ -29,6 +29,14 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub canecaz Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/canecaz/caneca-api</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>spigotmc-repo</id>
